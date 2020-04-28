@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head><style>
+body{
+background:linear-gradient(to bottom, #003300 0%, #009933 100%);
+background-repeat: no-repeat;
+background-size: auto 755px;
+margin-top: 100px;
+}
+
+table{
+color:white;
+background:black;
+text-align:left;
+}
+.btn{
+font-size: 1.2em;
+background-color: white;
+border: 2px solid white;
+}
+</style></head>
+<body >
+<form method="get" action="http://localhost:8080/examples/servlets/servlet/Shopping">
+<center><h1 style="color: white">Customer Details</h1>
+<table border="10" bordercolor="white"  width="auto" height="auto" cellpadding="10" cellspacing="15"  >
+<tr>
+<th>Enter your name</th>
+<td><input type="text" name="fn" id="fn1" maxlength="10" title="enter your first name" placeholder="" /></td>
+</tr>
+<tr>
+<th>Enter your email</th>
+<td><input type="email"/></td>
+</tr>
+<tr>
+<th>Enter your mobile</th>
+<td><input type="tel" maxlength="10"/></td>
+</tr>
+<tr>
+<th>Enter your address</th>
+<td><textarea rows="8" cols="30"></textarea></td>
+</tr>
+<tr>
+<th>Select the payment method</th>
+<td>
+<input type="checkbox" name="x" value="h1"/>Google Pay<br>
+<input type="checkbox" name="x" value="h2"/>Indian Bank<br>
+<input type="checkbox" name="x" value="h3"/>Credit card/Debit card
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input class="btn" type="submit" value="Make Payment"/>
+<input class="btn" type="reset" value="Reset Data"/>
+</td>
+</tr>
+</table></center>
+</form>
+</body>
+</html>
